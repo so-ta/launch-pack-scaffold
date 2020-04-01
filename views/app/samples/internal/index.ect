@@ -1,0 +1,17 @@
+<% extend 'layouts/layout.ect' %>
+
+<p>
+  下記のデータは、./data/samples/index.json を読み出したデータを元にレンダリングしています
+</p>
+
+<% for company in @data.companies : %>
+  <div style="margin: 12px;">
+    <a href="<%= @funcs.url 'Samples.Internal.Detail',{id: company.id} %>"><%= company.name %></a> /
+    <%= @appFuncs.timeFormat(company.time, "YYYY年MM月DD日 hh:mm:ss") %> /
+    <%= @appFuncs.exampleStatusText(company.status) %>
+  </div>
+<% end %>
+
+<p>
+  <a href="<%= @funcs.url 'Samples.Index' %>">サンプルページ</a>
+</p>

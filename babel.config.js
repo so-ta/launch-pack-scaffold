@@ -1,0 +1,7 @@
+const presets =  [
+  ["@babel/preset-env", {
+    "targets": [">0.25% in JP", "not ie <= 10", "not op_mini all"]
+  }]
+];
+
+module.exports = { presets };

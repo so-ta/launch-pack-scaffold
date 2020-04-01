@@ -1,0 +1,34 @@
+{
+  "App": {
+    "Index": {
+      "template": "app/index.ect"
+    }
+  },
+  "Samples": {
+    "Index": {
+      "template": "app/samples/index.ect"
+    },
+    "Internal": {
+      "Index": {
+        "template": "app/samples/internal/index.ect",
+        "json": "samples/index.json"
+      },
+      "Detail": {
+        "template": "app/samples/internal/detail.ect",
+        "json": "samples/detail/{id}.json"
+      }
+    },
+    "External": {
+      "Detail": {
+        "template": "app/samples/external/detail.ect",
+        "api": "https://qiita.com/so-ta/items/{id}.json"
+      }
+    }
+  },
+  "System": {
+    "404": {
+      "statusCode": 404,
+      "template": "errors/404.ect"
+    }
+  }
+}

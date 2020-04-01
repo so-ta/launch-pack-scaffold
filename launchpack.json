@@ -1,0 +1,7 @@
+{
+  "local": {
+    "use_resources_map": false,
+    "launchpack_debug_mode": true,
+    "debug": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "data": {
+    "company": {
+      "id": "sample003",
+      "name": "サンプル③株式会社",
+      "status": "success",
+      "time": "2020-01-01T10:00:00+09:00"
+    }
+  }
+}

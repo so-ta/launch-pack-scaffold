@@ -1,0 +1,5 @@
+<% extend 'layouts/layout.ect' %>
+
+<h2>サンプルの一覧です</h2>
+<a href="<%= @funcs.url 'Samples.Internal.Index' %>">内部データサンプル</a><br>
+<a href="<%= @funcs.url 'Samples.External.Detail',{id: '7f1b29b7d2098b5fd188'} %>">外部データサンプル</a>

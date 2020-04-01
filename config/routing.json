@@ -1,0 +1,13 @@
+{
+  "#": "App.Index",
+  "samples": {
+    "#": "Samples.Index",
+    "internal": {
+      "#": "Samples.Internal.Index",
+      ":id": "Samples.Internal.Detail"
+    },
+    "external": {
+      ":id": "Samples.External.Detail"
+    }
+  }
+}

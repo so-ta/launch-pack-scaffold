@@ -1,0 +1,13 @@
+<% extend 'layouts/layout.ect' %>
+
+<p>
+  下記のデータは、 <a href="https://qiita.com/so-ta/items/<%= @uuid %>.json" target="_blank">https://qiita.com/so-ta/items/<%= @uuid %>.json</a>から取得したデータを元にレンダリングしています
+</p>
+<p>
+  ID: <%= @id %><br>
+  UserID: <%= @user_id %><br>
+  投稿日： <%= @appFuncs.timeFormat(@created_at, "YYYY年MM月DD日 hh:mm:ss") %>
+</p>
+<p>
+  <a href="<%= @funcs.url 'Samples.Index' %>">サンプルページ</a>
+</p>

@@ -1,0 +1,14 @@
+version: '2'
+services:
+  jpr-transport:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - './config:/node/config'
+      - './src:/node/src'
+      - './views:/node/views'
+      - './launchpack.js:/node/launchpack.js'
+      - './launchpack.json:/node/launchpack.json'
+    ports:
+      - 3000:3000

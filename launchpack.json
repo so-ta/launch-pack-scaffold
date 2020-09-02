@@ -1,7 +1,26 @@
 {
   "local": {
+    "api_base_url": "http://127.0.0.1:9000",
     "use_resources_map": false,
     "launchpack_debug_mode": true,
     "debug": true
+  },
+  "develop": {
+    "api_base_url": "https://develop.anyapp.co.jp",
+    "use_resources_map": false,
+    "launchpack_debug_mode": true,
+    "debug": true
+  },
+  "staging": {
+    "api_base_url": "https://staging.anyapp.co.jp",
+    "use_resources_map": false,
+    "launchpack_debug_mode": false,
+    "debug": false
+  },
+  "production": {
+    "api_base_url": "https://anyapp.co.jp",
+    "use_resources_map": false,
+    "launchpack_debug_mode": false,
+    "debug": false
   }
 }

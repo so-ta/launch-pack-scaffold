@@ -79,14 +79,21 @@ gulp.task('generateResourcesmap',async function () {
 });
 
 gulp.task('watch', function () {
+  let counter = 0;
   gulpWatch('src/**/*', function (event) {
-    Promise.resolve()
-      .then(function () {
-        return npmRun("webpack")
-      })
-      .then(function () {
-        return generateResourcesmap()
-      })
+    counter++;
+    setTimeout(function () {
+      counter--;
+      if( counter === 0 ){
+        Promise.resolve()
+          .then(function () {
+            return npmRun("webpack")
+          })
+          .then(function () {
+            return generateResourcesmap()
+          })
+      }
+    }, 100);
   });
 });
 

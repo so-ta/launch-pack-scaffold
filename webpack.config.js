@@ -86,10 +86,12 @@ module.exports = [{
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),
-    new CopyWebpackPlugin([{
-      from: path.join(workDirectory, 'src', 'images'),
-      to: path.join(workDirectory, 'public', 'images')
-    }]),
+    new CopyWebpackPlugin({
+      patterns: [{
+        from: path.join(workDirectory, 'src', 'images'),
+        to: path.join(workDirectory, 'public', 'images')
+      }]
+    }),
     // new CopyWebpackPlugin([{
     //   from: path.join(workDirectory, 'src', 'favicon.ico'),
     //   to: path.join(workDirectory, 'public', 'favicon.ico')

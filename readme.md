@@ -1,5 +1,5 @@
 # AnyApp Scaffold
-ベースとなるフロントエンドを管理するリポジトリです。
+AnyAppのフロントエンドベースを管理するリポジトリです。
 
 ## ディレクトリ構成
 ```
@@ -28,3 +28,8 @@ ECTをラップするフレームワークとして、launch-pack を使用し�
 
 launch-packの説明は下記Qiitaに記載しています。  
 https://qiita.com/so-ta/private/21d4519294c5e0ff4495
+
+## AWS設定注意点
+`ecs-task-definition.json` 57行目
+`"name": "app"`
+途中で変更できないため、環境構築後に作成する場合は変更する必要があります。

@@ -15,15 +15,6 @@ exports.timeFormat = (format, timeStr = "") => {
   return time.format(format);
 };
 
-exports.exampleStatusText = (status) => {
-  switch (status) {
-    case "failed":
-      return "失敗";
-    case "success":
-      return "成功";
-  }
-};
-
 const escape_html = (string) => {
   if (typeof string !== 'string') {
     return string;
@@ -43,4 +34,14 @@ exports.escape_html = escape_html;
 
 exports.br = (str) => {
   return escape_html(str).replace(/\r?\n/g, '<br>');
+};
+
+
+exports.exampleStatusText = (status) => {
+  switch (status) {
+    case "failed":
+      return "失敗";
+    case "success":
+      return "成功";
+  }
 };
